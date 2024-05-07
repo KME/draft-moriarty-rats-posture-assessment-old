@@ -67,14 +67,14 @@ This document establishes a pattern to list sets of benchmarks and controls with
 # Introduction
 
 Posture assessment has long been desired, but has been difficult to achieve due to complexities of customization requirements at each organization.
-By using policy and measurement sets that may be offered at various assurance levels, local assessment of evidence can be performed to continuousy assess compliance.
+By using policy and measurement sets that may be offered at various assurance levels, local assessment of evidence can be performed to continuously assess compliance.
 An example of a form of local attestation is through the Trusted Computing Group's Trusted Platform Module (TPM) format and assessment method.
-This and other methods provide a secured log for transparency on the results of the assessed evidence against expacted values.
+This and other methods provide a secured log for transparency on the results of the assessed evidence against expected values.
 In order to support continuous monitoring of posture assessment and integrity in an enterprise or large data center, the local assessments and remediation are useful to reduce load on the network and remote resources.
 This is currently done today for the so called trusted boot process.
-It is useful to share the results of the compliance to expected values for measurements and policies in order to gain a bigger picture view of the governance, risk, and complaince posture for a network.
-As such, communiciating a summary result as evidence tied including a link to supporting logs with a remote attestation defined in an Entity Attestation Token (EAT) profile [I-D.ietf-rats-eat] provides a way to accomplish that goal.
-The level of intergation for local attestation meeting defined policies and measurements at specific levels, including the ability to remediate makes posture assessment through attestation achievable for organizations of all sizes due to integration being required in existing toolsets and systems, built as an intrinsic capability.
+It is useful to share the results of the compliance to expected values for measurements and policies in order to gain a bigger picture view of the governance, risk, and compliance posture for a network.
+As such, communicating a summary result as evidence tied including a link to supporting logs with a remote attestation defined in an Entity Attestation Token (EAT) profile [I-D.ietf-rats-eat] provides a way to accomplish that goal.
+The level of integration for local attestation meeting defined policies and measurements at specific levels, including the ability to remediate makes posture assessment through attestation achievable for organizations of all sizes due to integration being required in existing tool-sets and systems, built as an intrinsic capability.
 The measurement and policy groupings results summarized in an EAT profile may be provided by the vendor or by a neutral third party to enable ease of use and consistent implementations.
 The local system or server host performs the assessment of posture and remediation.
 This provides simpler options to enable posture assessment at selected levels by organizations without the need to have in-house expertise.
@@ -140,12 +140,12 @@ The claims provide the additional information needed for an EAT to convey compli
 
 The remote attestation framework shall include provisions within the system and attestation authority to allow for Product modification.
 
-Over its lifecycle, the Product may experience modification due to: maintenance, failures, upgrades, expansion, moves, etc.
+Over its life-cycle, the Product may experience modification due to: maintenance, failures, upgrades, expansion, moves, etc.
 
 The customer can chose to:
 
 * Run remote attestation after product modification, or
-* Not take action and remain un-protected
+* Not take action and remain unprotected
 
 In the case of Re-Attestation:
 
@@ -158,7 +158,7 @@ In the case of Re-Attestation:
 
 In some cases, it may be difficult to attest to configuration settings for the initial or subsequent attestation and verification processes.
 The use of an expected hash value for configuration settings can be used to compare the attested configuration set.
-In this case, the creator of the attestation verification measurements would define a set of values for which a message digest would be created and then signed by the attestor.
+In this case, the creator of the attestation verification measurements would define a set of values for which a message digest would be created and then signed by the Attester.
 The expected measurements would include the expected hash value for comparison.
 The configuration set could be the full attestation set to a Benchmark or a defined subset.
 These configuration sets can be registered for general use to reduce the need to replicate the policy and measurement assessments by others aiming to assure at the same level for a benchmark or hardening guide.
@@ -166,7 +166,7 @@ This document creates an IANA registry for this purpose, creating consistency be
 
 # Remediation
 
-If policy and configuration settings or measurements attested do not meet expected values, remediation is desireable.
+If policy and configuration settings or measurements attested do not meet expected values, remediation is desirable.
 Automated remediation performed with alignment to zero trust architecture principles would require that the remediation be performed prior to any relying component executing.
 The relying component would verify before continuing in a zero trust architecture.
 
