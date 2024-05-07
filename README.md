@@ -1,2 +1,30 @@
-# draft-moriarty-rats-posture-assessment
-Next version from attestation sets draft
+# Scalable Remote Attestation for Systems, Containers, and Applications
+
+This is the working area for the individual Internet-Draft, "Scalable Remote Attestation for Systems, Containers, and Applications".
+
+* [Editor's Copy](https://KME.github.io/draft-moriarty-rats-posture-assessment/#go.draft-moriarty-rats-posture-assessment.html)
+* [Datatracker Page](https://datatracker.ietf.org/doc/draft-moriarty-rats-posture-assessment)
+* [Individual Draft](https://datatracker.ietf.org/doc/html/draft-moriarty-rats-posture-assessment)
+* [Compare Editor's Copy to Individual Draft](https://KME.github.io/draft-moriarty-rats-posture-assessment/#go.draft-moriarty-rats-posture-assessment.diff)
+
+
+## Contributing
+
+See the
+[guidelines for contributions](https://github.com/KME/draft-moriarty-rats-posture-assessment/blob/main/CONTRIBUTING.md).
+
+Contributions can be made by creating pull requests.
+The GitHub interface supports creating pull requests using the Edit (✏) button.
+
+
+## Command Line Usage
+
+Formatted text and HTML versions of the draft can be built using `make`.
+
+```sh
+$ make
+```
+
+Command line usage requires that you have the necessary software installed.  See
+[the instructions](https://github.com/martinthomson/i-d-template/blob/main/doc/SETUP.md).
+
